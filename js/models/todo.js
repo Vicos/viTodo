@@ -7,6 +7,10 @@ var app = app || {};
   // Our basic **Todo** model has `title`, `order`, and `done` attributes.
   app.Todo = Backbone.Model.extend({
 
+    // Save it in an indexedDB
+    database: app.db,
+    storeName: "todos",
+
     // Default attributes for the todo item.
     defaults: function() {
       return {
