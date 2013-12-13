@@ -10,9 +10,6 @@ var app = app || {};
     database: app.db,
     storeName: "todos",
 
-    // Save all of the todo items under the `"todos-backbone"` namespace.
-    //localStorage: new Backbone.LocalStorage("todos-backbone"),
-
     // Filter down the list of all todo items that are finished.
     done: function() {
       return this.where({done: true});
