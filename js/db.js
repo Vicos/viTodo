@@ -4,6 +4,7 @@ var app = app || {};
     app.db = {
         id: "todoDB",
         description: "Database of the todo list",
+        nolog: true,
         migrations : [
             {
                 version: "1.0",
