@@ -13,16 +13,21 @@
 
 <body>
 
-  <div id="todoapp">
+  <div id="viTodo" class="container">
 
-    <header>
+    <header class="page-header">
       <h1>Todos</h1>
-      <input id="new-todo" type="text" placeholder="What needs to be done?">
+      
+      <div class="btn-toolbar">
+        <div class="btn-group">
+          <button id="toggle-all" class="btn btn-sm btn-default">Mark all</button>
+        </div>
+      </div>
+      
     </header>
 
     <section id="main">
-      <input id="toggle-all" type="checkbox">
-      <label for="toggle-all">Mark all as complete</label>
+      <input id="new-todo" class="form-control" type="text" placeholder="What needs to be done?">
       <ul id="todo-list"></ul>
     </section>
 
@@ -33,15 +38,9 @@
 
   </div>
 
-  <div id="instructions">
-    Double-click to edit a todo.
-  </div>
-
   <div id="credits">
-    Created by
-    <br />
-    <a href="http://jgn.me/">J&eacute;r&ocirc;me Gravel-Niquet</a>.
-    <br />Rewritten by: <a href="http://addyosmani.github.com/todomvc">TodoMVC</a>.
+    Created by <a href="http://jgn.me/">J&eacute;r&ocirc;me Gravel-Niquet</a>.
+    <br />Rewritten by <a href="http://addyosmani.github.com/todomvc">TodoMVC</a>.
   </div>
 
   <!-- Templates -->
@@ -52,7 +51,7 @@
       <label><%- title %></label>
       <a class="destroy"></a>
     </div>
-    <input class="edit" type="text" value="<%- title %>" />
+    <input class="form-control edit" type="text" value="<%- title %>" />
   </script>
 
   <script type="text/template" id="stats-template">
