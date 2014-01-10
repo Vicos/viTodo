@@ -47,6 +47,7 @@
 
   <script type="text/template" id="item-template">
     <div class="view">
+      <span class="handle">::</span>
       <input class="toggle" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
       <label><%- title %></label>
       <a class="destroy"></a>
@@ -68,6 +69,7 @@
   <script src="bower_components/backbone/backbone-min.js"></script>
   <script src="bower_components/indexeddb-backbonejs-adapter/backbone-indexeddb.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/html5sortable/jquery.sortable.js"></script>
 
   <script src="js/db.js"></script>
   <script src="js/models/todo.js"></script>

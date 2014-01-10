@@ -1,11 +1,11 @@
-
+  
 #todo-list {
   list-style: none;
   padding-left: 0;
 }
 #new-todo, #todo-list li {
   margin-bottom: 10px;
-  line-height: 29px;
+  line-height: 34px;
 }
 
 #todo-list .edit { display: none; }
@@ -13,4 +13,13 @@
 #todo-list .view { display: inherit; }
 #todo-list .editing .view { display: none; }
 
-#todo-list .done .view label { text-decoration: line-through; }
+#todo-list .view label { display: inline; }
+#todo-list .done .view label {
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.sortable-placeholder {
+  border: 1px dashed #aaa;
+  height: 34px;
+}

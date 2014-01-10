@@ -21,7 +21,6 @@ var app = app || {};
     // collection, when items are added or changed. Kick things off by
     // loading any preexisting todos that might be saved in *localStorage*.
     initialize: function() {
-
       this.input = this.$("#new-todo");
       this.allCheckbox = this.$("#toggle-all")[0];
 
@@ -58,6 +57,8 @@ var app = app || {};
     addOne: function(todo) {
       var view = new app.TodoView({model: todo});
       this.$("#todo-list").append(view.render().el);
+
+      $("#todo-list").sortable({ handle: '.handle' });
     },
 
     // Add all items in the **Todos** collection at once.
@@ -84,7 +85,6 @@ var app = app || {};
     toggleAllComplete: function () {
       var done = this.allCheckbox.checked;
       app.todos.each(function (todo) { todo.save({'done': done}); });
-    }
-
+    },
   });
 })(jQuery);
