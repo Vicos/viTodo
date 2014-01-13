@@ -1,7 +1,8 @@
-var app = app || {};
+/*global viTodo */
+'use strict';
 
-(function() {
-    app.db = {
+viTodo.module('Database', function (Database) {
+    Database.TodoDB = {
         id: "todoDB",
         description: "Database of the todo list",
         nolog: true,
@@ -15,4 +16,4 @@ var app = app || {};
             }
         ]
     }
-})();
+});
