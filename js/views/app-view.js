@@ -41,11 +41,9 @@ var app = app || {};
       var remaining = app.todos.remaining().length;
 
       if (app.todos.length) {
-        this.main.show();
         this.footer.show();
         this.footer.html(this.statsTemplate({done: done, remaining: remaining}));
       } else {
-        this.main.hide();
         this.footer.hide();
       }
 
