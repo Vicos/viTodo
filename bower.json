@@ -21,6 +21,7 @@
     "jquery": "~2.0.3",
     "underscore": "~1.5.2",
     "backbone": "~1.1.0",
+    "marionette": "~1.4.1",
     "indexeddb-backbonejs-adapter": null,
     "bootstrap": "~3.0.3",
     "html5sortable": "git://github.com/farhadi/html5sortable"
