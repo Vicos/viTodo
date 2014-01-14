@@ -1,4 +1,15 @@
-  
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Exo+2);
+
+body {
+    color: #333;
+    background-color: #f9f9f9;
+    font-family: 'Exo 2', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Oswald', sans-serif;
+}
+
 #todo-list {
   list-style: none;
   padding-left: 0;
@@ -22,4 +33,11 @@
 .sortable-placeholder {
   border: 1px dashed #aaa;
   height: 34px;
+}
+
+#info {
+    margin-top: 100px;
+    color: #999;
+    text-align: center;
+    font-size: 0.7em;
 }
