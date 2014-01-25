@@ -4,7 +4,7 @@
 var viTodo = new Backbone.Marionette.Application();
 
 viTodo.addRegions({
-	header: '#header',
+	premain: '#pre-main',
 	main: '#main',
 	footer: '#footer'
 });

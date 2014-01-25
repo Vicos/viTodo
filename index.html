@@ -13,21 +13,24 @@
 
 <body>
   <section id="todoapp" class="container">
-    <header id="header" class="page-header"></header>
-    <section id="main"></section>
-    <footer id="footer"></footer>
+    <header class="page-header">
+      <h1>viTodo</h1>
+    </header>
+    <section>
+      <section id="pre-main"></section>
+      <section id="main"></section>
+      <section id="post-main"></section>
+    </section>
+    <footer id="info">
+      Forked from TodoMVC (<a href="http://github.com/jsoverson">Jarrod Overson</a>, <a href="http://github.com/derickbailey">Derick Bailey</a>)
+    </footer>
   </section>
 
-  <footer id="info">
-    <p>
-      Forked from TodoMVC (<a href="http://github.com/jsoverson">Jarrod Overson</a>, <a href="http://github.com/derickbailey">Derick Bailey</a>)
-    </p>
-  </footer>
+
 
   <!-- Templates -->
 
-  <script type="text/html" id="template-header">
-    <h1>viTodo</h1>
+  <script type="text/html" id="template-pre-main">
     <input id="new-todo" class="form-control" placeholder="What needs to be done?" autofocus>
   </script>
 
@@ -50,7 +53,7 @@
       <span class="handle">::</span>
       <input class="toggle" type="checkbox" <% if (completed) { %>checked<% } %>>
       <label><%- title %></label>
-      <button class="destroy"></button>
+      <button class="btn btn-xs btn-default destroy">destroy</button>
     </div>
     <input class="form-control edit" value="<%- title %>">
   </script>

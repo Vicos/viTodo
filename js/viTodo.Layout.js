@@ -4,8 +4,8 @@
 viTodo.module('Layout', function (Layout, App, Backbone) {
 	// Layout Header View
 	// ------------------
-	Layout.Header = Backbone.Marionette.ItemView.extend({
-		template: '#template-header',
+	Layout.Premain = Backbone.Marionette.ItemView.extend({
+		template: '#template-pre-main',
 
 		// UI bindings create cached attributes that
 		// point to jQuery selected objects

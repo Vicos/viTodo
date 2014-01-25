@@ -25,17 +25,17 @@ viTodo.module('TodoList', function (TodoList, App, Backbone, Marionette, $, _) {
 		// Start the app by showing the appropriate views
 		// and fetching the list of todo items, if there are any
 		start: function () {
-			this.showHeader(this.todoList);
+			this.showPremain(this.todoList);
 			this.showFooter(this.todoList);
 			this.showTodoList(this.todoList);
 			this.todoList.fetch();
 		},
 
-		showHeader: function (todoList) {
-			var header = new App.Layout.Header({
+		showPremain: function (todoList) {
+			var premain = new App.Layout.Premain({
 				collection: todoList
 			});
-			App.header.show(header);
+			App.premain.show(premain);
 		},
 
 		showFooter: function (todoList) {
